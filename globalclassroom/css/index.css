@@ -1,0 +1,753 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    padding: 20px 8%;
+}
+
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    width: 20%;
+    max-width: 100px;
+}
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+
+.nav-branding{
+    font-size: 2rem;
+
+}
+ .nav-item{
+    border-radius: 30px;
+    background-color: #00adf7;
+    padding: 5px 30px;
+
+}
+.nav-link{
+    transition: 0.7s ease;
+    color: white;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+article{
+    text-align: center;
+    color: black;
+}
+h2{
+    font-size: 35px;
+}
+h1{
+    margin: 30px;
+    font-size: 32px;
+    font-weight: lighter;
+}
+/*button{
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+    border: 2px white solid;
+    border-radius: 5px;
+    padding: 15px 50px;
+}*/
+.carousel {
+    width: 100vw;
+    position: relative;
+}
+
+.carousel .carousel-item,
+.carousel .carousel-item-hidden {
+    display: none;
+}
+
+.carousel .carousel-item-visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.carousel .carousel-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel .carousel-actions button {
+    border-radius: 50px;
+    background-color: white;
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel .carousel-actions button#carousel-button-prev {
+    margin-left: 20px;
+}
+
+.carousel .carousel-actions button#carousel-button-next {
+    margin-right: 20px;   
+}
+
+
+/*================LAYOUT SEKCIJA===============*/
+.o-projektu, .zasto-projekat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 8%;
+}
+
+.o-projektu{
+    background-image: linear-gradient(to right,#008CC8, #00ADF6);
+}
+.zasto-projekat{
+    background-color: white;
+}
+.benefiti{
+    background-image: linear-gradient(#00ADF6, #008CC8);
+    padding: 50px 8%;
+}
+.benefiti h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.o-projektu-leva, .zasto-projekat-desna{
+    width: 55%;
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+.zasto-projekat-desna{
+    color: black;
+}
+
+.o-projektu-desna, .zasto-projekat-leva{
+    width: 35%;
+    max-width: 400px;
+}
+
+.o-projektu-leva p, .zasto-projekat-desna p{
+    margin: 3% 0 6% 0;
+}
+
+.o-projektu-desna img, .zasto-projekat-leva img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+/*=======BENEFITI KARTICE====*/
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 50px;
+}
+.card{
+    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 50px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F2EDD9;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+    max-width: 500px;
+    max-height: 500px;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+}
+.card h4{
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+}
+/*==============VOLONTERI SEKCIJA================*/
+
+.volonteri{
+    padding: 50px 8%;
+}
+.volonteri h2{
+        text-align: center;
+    }
+
+.flex-container-volonteri{
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    flex-wrap: wrap;
+}
+.card-volonter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00ADF6;
+    width: 25%;
+    border-radius: 50px;
+    padding: 30px 50px;
+    min-width: 350px;
+    color: white;
+}
+.card-volonter h4{
+    font-size: 22px;
+}
+.card-volonter p{
+    font-size: 18px;
+    margin-bottom: 15%;
+}
+.card-volonter img{
+    border-radius: 50%;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+.volonteri h2{
+    color: #00ADF6;
+    margin-bottom: 4%;
+}
+
+/*=========== SARADNICI ================*/
+.saradnici{
+    padding: 50px 8%;
+    background-color: #00ADF6;
+}
+.saradnici h2{
+    text-align: center;
+    margin-bottom: 4%;
+    color: white;
+}
+.flex-container-saradnici{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.img-container-saradnici{
+    padding: 30px;
+    background-color: white;
+    border-radius: 50px;
+}
+.img-container-saradnici img{
+    width: 100%;
+    height: 100%;
+}
+
+/*=========== footer ================*/
+.flex-container-footer{
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-footer img{
+    width: 100%;
+    max-width: 100px;
+}
+
+.contact-footer{
+    display: grid;
+    grid-template-columns: repeat(2, .3fr);
+    column-gap: 10px;
+    
+}
+.contact-footer p{
+    color: #00ADF6;
+}
+
+.social-media-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+/*========PRIJAVA - TERMINI===========*/
+.termini{
+    background-image: linear-gradient(to right, #00ADF6, #008CC8);
+    padding: 5% 8%;
+}
+.termini h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.flex-container-termini{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+.card-termin{
+    border: 10px solid white;
+    border-radius: 80px;
+    color: white;
+    min-width: 400px;
+    max-width: 520px;
+    padding: 30px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+.card-termin img{
+    margin: 0 auto;
+}
+.card-termin h4{
+    font-size: 24px;
+    text-align: center;
+}
+.letnji{
+    background-color: #F6C000;
+    
+}
+.crvena{
+    background-color: #FF4241;
+}
+.bold{
+    font-weight: bolder;
+}
+.small-text{
+    display: block;
+    font-size: 14px;
+}
+
+/*======== O NAMA ===========*/
+
+.o-nama{
+    background-color: #00ADF6;
+    padding: 50px 8%;
+}
+.flex-container-o-nama{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+}
+.projekat-opis-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.projekat-opis-wrapper img{
+    width: 30vw;
+    height: 30vw;
+    max-height: 450px;
+    max-width: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.projekat-opis{
+    position: relative;
+    width: 50%;
+    background-color: white;
+    padding: 5%;
+    border-radius: 20px;
+ 
+}
+.projekat-opis p{
+    font-size: 16px;
+}
+.projekat-opis h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+.tekst-desna-strana{
+    margin-left: auto;
+}
+
+.aiesec{
+    background-color: #008CC8;
+    padding: 5% 8%;
+    color: white;
+    font-size: 18px;
+}
+.aiesec h2{
+    margin-bottom: 5%;
+    text-align: center;
+}
+.aiesec p{
+    margin-bottom: 5%;
+}
+/*=========== ISKUSTA ================*/
+
+.iskustva{
+    padding: 5% 8%;
+    background-color: #00ADF6;
+}
+.iskustva h2{
+    text-align: center;
+    margin-bottom: 5%;
+    color: white;
+}
+
+
+.flex-container-iskustva{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.tekst-iskustva {
+    padding:8%;
+    border-radius: 50px;
+    background-color: #008CC8;
+    width: 50%;
+    color: white;
+    font-size: 20px;
+}
+.img-hidden-container{
+    display: none;
+}
+
+/*=========== DUGMAD ================*/
+
+.btn-read-more{
+    font-size: 20px;
+    padding: 5px 30px;
+    border-radius: 50px;
+    margin-top: auto;
+}
+
+.btn-read-more-dark{
+    background-color:#00adf7;
+    color: white;
+}
+.btn-read-more-light{
+    background-color: white;
+    color: #00ADF6;
+
+}
+.btn-prijavi-se{
+    border: none;
+    align-self: center;
+    width: 50%;
+    border-radius: 50px;
+    font-size: 16px;
+    background-color: white;
+    padding: 10px 0;
+}
+.btn-zimski{
+    color: #008CC8;
+
+}
+.btn-letnji{
+    color: #F6C000;
+}
+.btn-crveni{
+    color: #FF4241;
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@media(max-width: 1500px){
+    .termini h2{
+        margin-bottom: 0;
+    }
+    .flex-container-termini{
+        justify-content: center;
+        gap: 5%;
+    }
+    .card-termin{
+        margin-top: 5%;
+    }
+    .projekat-opis{
+        max-height: 500px;
+        overflow: scroll;   
+    }
+}
+@media (max-width: 1400px){
+    .o-projektu-leva, .zasto-projekat-desna, .btn-read-more{
+        font-size: 16px;
+}
+
+
+.card-volonter h4{
+    font-size: 20px;
+}
+.card-volonter p{
+    font-size: 16px;
+}
+@media(max-width: 1350px){
+    .volonteri h2{
+        margin-bottom: 0;
+    }
+    .flex-container-volonteri{
+        justify-content: center;
+    }
+    .card-volonter{
+        margin-top: 5%;
+    }
+}
+
+
+
+}
+@media(max-width: 1200px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active{
+        position: fixed;
+        right: 5%;
+        z-index: 99;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(8px); 
+        height: 100vh;
+        z-index: 9;
+        padding: 10% 0;
+    }
+    .nav-item{
+        margin: 16px;
+
+    }
+    .nav-menu.active{
+        left: 0;
+        top: 0;
+
+    }
+
+.projekat-opis .img-left{
+    right: 81%;
+    top: 85%;
+}
+}
+@media(max-width: 1150px){
+    .flex-container-saradnici{
+        gap: 5%;
+        justify-content: center;
+
+    }
+    .saradnici h2{
+        margin-bottom: 0;
+    }
+    .img-container-saradnici{
+        margin-top: 4%;
+    }
+    
+}
+
+
+
+
+@media (max-width: 1000px){
+    .o-projektu-desna, .zasto-projekat-leva{
+        display: none;
+    }
+    .o-projektu-leva, .zasto-projekat-desna{
+        width: 100%;
+    }
+    .o-projektu, .zasto-projekat{
+        padding: 8%;
+    }
+    .flex-container-iskustva{
+        flex-direction: column;
+        position: relative;
+    }
+
+    .img-hidden-container{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        display: block;
+        padding: 10px;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        background-color: white;
+
+    }
+    /*.img-container-saradnici-iskustva{
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+
+    .img-container-saradnici-iskustva .img-saradnici-iskustva{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: contain;
+    }*/
+    .img-hidden-container .img-hidden{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: contain;
+
+    }
+
+    .img-container-saradnici,.img-container-saradnici img{
+        display: none;
+    }
+
+
+    
+}
+@media(max-width: 900px){
+    .projekat-opis-wrapper img{
+        display: none;
+    }
+    .projekat-opis{
+        width: 80%;
+    }
+}
+@media (max-width: 706px){
+    .grid-container{
+        grid-template-columns: repeat(1, .7fr);
+        justify-content: center;
+    }
+    .card{
+        max-width: unset;
+    }
+    .flex-container-footer{
+        width: 50%;
+        margin: 0 auto;
+        padding: 5% 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .contact-footer{
+        font-size: 12px;
+    }
+    .social-media-footer{
+        flex-direction: row;
+        
+    }
+    .card-termin{
+        min-width: 350px;
+    }
+    .flex-container-o-nama{
+        align-items: center;
+    }
+    .projekat-opis p{
+        width: 100%;
+        font-size: 3vw;
+    }
+    .desna-strana{
+        align-self: center;
+    }
+    .projekat-opis h2{
+
+        font-size: 5vw;
+    } 
+    .tekst-iskustva{
+        font-size: 16px;
+    }
+    .img-hidden-container{
+        width: 100px;
+        height: 100px;
+        
+
+    }
+    .tekst-iskustva{
+    width: 70%;
+}
+
+}
+@media(max-width: 550px){
+    .card-volonter{
+        min-width: 250px;
+    }
+    .card-volonter img{
+        max-width: 100px;
+    }
+    .card-volonter h4{
+        font-size: 16px;
+    }
+    .card-volonter p, .btn-read-more{
+        font-size: 12px;
+    }
+    .projekat-opis{
+        padding: 10%;
+        
+    }
+    .projekat-opis h2{
+        font-size: 20px;
+    }
+
+    .projekat-opis p{
+        font-size: 16px;
+    }
+
+
+}
